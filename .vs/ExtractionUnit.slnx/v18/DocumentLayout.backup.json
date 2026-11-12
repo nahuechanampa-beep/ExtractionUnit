@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Unity proyects\\ExtractionUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,19 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Player movement.cs",
-              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Player movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player movement.cs",
-              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Player movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player movement.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwAUAAAAoAAAAAAAAAA==",
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-11T22:49:02.851Z",
+              "WhenOpened": "2026-10-12T18:38:44.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Gun.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gun.cs",
@@ -43,7 +47,19 @@
               "RelativeToolTip": "Assets\\Scripts\\Gun.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAArwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-11T16:16:46.161Z",
+              "WhenOpened": "2026-10-11T16:16:46.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player movement.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Player movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player movement.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Player movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player movement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T17:25:06.36Z",
               "EditorCaption": ""
             }
           ]
