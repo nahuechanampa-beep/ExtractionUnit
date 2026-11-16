@@ -36,6 +36,12 @@ public class PlayerMovement : MonoBehaviour
     {
        moveInput = context.ReadValue<Vector2>();
     }
+
+
+
+
+
+
 }
     
 
