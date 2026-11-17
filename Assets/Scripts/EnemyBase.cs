@@ -10,6 +10,7 @@ public abstract class EnemyBase : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Transform target;
+    [SerializeField] private float detectionRadius = 2f;
 
     private float lastAttackTime;
 
@@ -19,15 +20,25 @@ public abstract class EnemyBase : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = moveSpeed;
-        agent.updateRotation = false; // Desactivar la rotación automática del agente
-        agent.updateUpAxis = false; // Desactivar la actualización del eje Y del agente
+        agent.updateRotation = false; 
+        agent.updateUpAxis = false; 
 
     }
 
     private void Update()
     {
-       
-        agent.SetDestination(target.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+        
+        if (distanceToPlayer <= detectionRadius)
+        {
+
+            detectionRadius = 100f;
+            agent.SetDestination(target.position);
+            //FollowPlayer();
+
+        }
+     
+        
 
         if (agent.velocity.sqrMagnitude > 0.01f) // Solo rotar si realmente se está moviendo
         {
@@ -41,60 +52,28 @@ public abstract class EnemyBase : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, angulo);
         }
 
-
-
-
-
-
-
-
-        //if (playerTransform != null)
-        //{
-        //    float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-        //    //if (distanceToPlayer <= attackRange)
-        //    //{
-        //    //    AttackPlayer();
-        //    //}
-        //    //else
-        //    //{
-        //     //FollowPlayer();
-        //    //}
-        //}
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerTransform = collision.transform;
-
-            //AttackPlayer();
-            FollowPlayer();
-        }
-    }
-
-
-    //private void AttackPlayer()
+    //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if (Time.time - lastAttackTime >= attackCooldown)
+    //    if (collision.CompareTag("Player"))
     //    {
-    //        if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackRange)
-    //        {
-    //            // Aquí puedes implementar la lógica para infligir daño al jugador
-    //            Debug.Log($"El enemigo {name} ha atacado al jugador y le ha infligido {damage} de daño.");
-    //            lastAttackTime = Time.time;
-    //        }
+    //        playerTransform = collision.transform;
+
+    //        //AttackPlayer();
+    //        FollowPlayer();
     //    }
     //}
 
-    private void FollowPlayer()
-    {
-        if (playerTransform != null)
-        {
-            Vector2 direction = playerTransform.position - transform.position;
-            transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
-        }
-    }
+    //private void FollowPlayer()
+    //{
+    //    if (playerTransform != null)
+    //    {
+    //        Vector2 direction = playerTransform.position - transform.position;
+    //        transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
+    //    }
+    //}
+
 
     private void TakeDamage(float damage)
     {
@@ -111,5 +90,14 @@ public abstract class EnemyBase : MonoBehaviour
         Debug.Log($"El enemigo {name} ha muerto.");
         Destroy(gameObject);
     }
+
+
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+    }
+
 
 }
