@@ -1,27 +1,42 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class EnemyBase : MonoBehaviour
+public abstract class EnemyBase : MonoBehaviour, IDamageable
 {
-    [SerializeField] protected float health = 100f;
-    //[SerializeField] private float damage = 10f;
-    //[SerializeField] private float attackCooldown = 1f;
+    [SerializeField] protected float maxHealth = 100f;
+    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] private float attackCooldown = 1f;
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Transform target;
     [SerializeField] private float detectionRadius = 2f;
+   
+    
+    [SerializeField] protected float knockbackForce = 8f;
+    [SerializeField] protected float knockbackDuration = 0.2f;
+    [SerializeField] protected float attackPauseDuration = 1.0f;
 
     private float lastAttackTime;
-
+    protected float currentHealth;
+    protected bool isAttackPaused = false;
     private NavMeshAgent agent;
+
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        
+    }
 
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        
         agent.speed = moveSpeed;
         agent.updateRotation = false; 
-        agent.updateUpAxis = false; 
+        agent.updateUpAxis = false;
+        currentHealth = maxHealth;
 
     }
 
@@ -34,7 +49,7 @@ public abstract class EnemyBase : MonoBehaviour
 
             detectionRadius = 100f;
             agent.SetDestination(target.position);
-            //FollowPlayer();
+            
 
         }
      
@@ -54,31 +69,13 @@ public abstract class EnemyBase : MonoBehaviour
 
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Player"))
-    //    {
-    //        playerTransform = collision.transform;
-
-    //        //AttackPlayer();
-    //        FollowPlayer();
-    //    }
-    //}
-
-    //private void FollowPlayer()
-    //{
-    //    if (playerTransform != null)
-    //    {
-    //        Vector2 direction = playerTransform.position - transform.position;
-    //        transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
-    //    }
-    //}
+    
 
 
-    private void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
-        health -= damage;
-        if (health <= 0f)
+        currentHealth -= damage;
+        if (currentHealth <= 0f)
         {
             Die();
         }
@@ -86,12 +83,45 @@ public abstract class EnemyBase : MonoBehaviour
 
     private void Die()
     {
-        // Aquí puedes implementar la lógica para manejar la muerte del enemigo
+        
         Debug.Log($"El enemigo {name} ha muerto.");
         Destroy(gameObject);
     }
 
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isAttackPaused) return;
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // 1. Aplica daño mediante la interfaz IDamageable
+            if (collision.gameObject.TryGetComponent<IDamageable>(out IDamageable target))
+            {
+                target.TakeDamage(attackDamage);
+            }
+
+            // 2. Empuja al jugador en dirección opuesta al zombie
+            if (collision.gameObject.TryGetComponent<PlayerHealth>(out PlayerHealth playerHealth))
+            {
+                Vector2 pushDir = (collision.transform.position - transform.position).normalized;
+                playerHealth.ApplyKnockback(pushDir, knockbackForce, knockbackDuration);
+            }
+
+            // 3. Pausa al zombie por un momento
+            StartCoroutine(AttackCooldownRoutine());
+        }
+    }
+
+    private IEnumerator AttackCooldownRoutine()
+    {
+        isAttackPaused = true;
+        if (agent != null) agent.isStopped = true;
+
+        yield return new WaitForSeconds(attackPauseDuration);
+
+        if (agent != null && agent.isOnNavMesh) agent.isStopped = false;
+        isAttackPaused = false;
+    }
 
     private void OnDrawGizmosSelected()
     {
