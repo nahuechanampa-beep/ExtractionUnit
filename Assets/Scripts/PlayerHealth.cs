@@ -1,25 +1,30 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField] private int playerMaxHealth = 100;
+
+    public static event Action<float, float> OnHealthChanged;
+    public static event Action OnPlayerDied;
+
+    [SerializeField] private float playerMaxHealth = 100f;
     [SerializeField] private GameObject defeatMenu;
-    private int playerCurrentHealth;
-    private float enemyDamage { get { return 10f; } } // Daño que inflige el enemigo al jugador
+    private float playerCurrentHealth;
+    private Rigidbody2D rb;
+    
     private void Awake()
     {
-        playerCurrentHealth = playerMaxHealth;
-    }
-
-
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         
+        rb = GetComponent<Rigidbody2D>();
     }
+    private void Start()
+    {
+        playerCurrentHealth = playerMaxHealth;
+        OnHealthChanged?.Invoke(playerCurrentHealth, playerMaxHealth);
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -33,12 +38,14 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    private void TakeDamage(int damage)
+    public virtual void TakeDamage(float damage)
     {
-        playerCurrentHealth -= damage;
+        playerCurrentHealth = Mathf.Clamp(playerCurrentHealth - damage, 0, playerMaxHealth);
+        OnHealthChanged?.Invoke(playerCurrentHealth, playerMaxHealth);
+
         if (playerCurrentHealth <= 0)
         {
-            Die();
+            OnPlayerDied?.Invoke();
         }
     }
 
@@ -50,6 +57,17 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0f; // Pausa el juego
     }
 
+    public void ApplyKnockback(Vector2 direction, float force, float duration)
+    {
+        StartCoroutine(KnockbackRoutine(direction, force, duration));
+    }
 
+    private IEnumerator KnockbackRoutine(Vector2 direction, float force, float duration)
+    {
+        // Si tenés un script de movimiento del jugador, podés desactivarlo brevemente acá
+        rb.linearVelocity = direction.normalized * force; 
+        yield return new WaitForSeconds(duration);
+        rb.linearVelocity = Vector2.zero;
+    }
 
 }
