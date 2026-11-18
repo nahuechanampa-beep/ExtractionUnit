@@ -32,22 +32,16 @@ public abstract class WeaponBase : MonoBehaviour, IWeapon
 
     protected float nextShootTime = 0f;
 
+
     public virtual void Shoot()
     {
 
         if (Time.time >= nextShootTime + fireRate)
         {
+            float exactAngle = GetMouseAngle();
+            Quaternion exactRotation = Quaternion.Euler(0f, 0f, exactAngle);
 
-           
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0f;
-            
-            Vector2 direccionAlMouse = (mousePos - spawnBulletPosition.position).normalized;
-            
-            float angulo = Mathf.Atan2(direccionAlMouse.y, direccionAlMouse.x) * Mathf.Rad2Deg;
-            Quaternion rotacionExacta = Quaternion.Euler(0f, 0f, angulo);
-           
-            Transform bulletTransform = Instantiate(pfBulletProjectile, spawnBulletPosition.position, rotacionExacta);
+            Transform bulletTransform = Instantiate(pfBulletProjectile, spawnBulletPosition.position, exactRotation);
             if (bulletTransform.TryGetComponent<Bullet>(out Bullet bullet))
             {
                 bullet.Setup(damage, bulletSpeed);
@@ -66,6 +60,16 @@ public abstract class WeaponBase : MonoBehaviour, IWeapon
             audioSource.pitch = Random.Range(pitchMin, pitchMax);
             audioSource.PlayOneShot(sonidoDisparo);
         }
+    }
+
+
+    protected float GetMouseAngle()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f;
+        Vector2 mouseDir = (mousePos - transform.position).normalized;
+        float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
+        return angle;
     }
 
 }

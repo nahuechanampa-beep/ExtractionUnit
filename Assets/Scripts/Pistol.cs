@@ -9,12 +9,12 @@ public class Pistol : WeaponBase
         isAutomatic = false; 
     }
 
-    private void Update()
-    {
-        
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            Shoot();
-        }
-    }
+    //private void Update()
+    //{
+    //   if(Input.GetMouseButtonDown(0))
+    //   {
+    //        Shoot();
+    //   }
+    //}
+    
 }
