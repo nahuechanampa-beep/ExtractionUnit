@@ -13,7 +13,9 @@ public class Bullet : MonoBehaviour
     }
     void Start()
     {
-        rb.linearVelocity = transform.right * bSpeed; 
+        
+
+        rb.linearVelocity = transform.right * bSpeed;
         Destroy(gameObject, lifeTime);
     }
 
@@ -22,10 +24,7 @@ public class Bullet : MonoBehaviour
     {
         this.dmg = weaponDamage;
         this.bSpeed = weaponSpeed;
-        if (rb != null)
-        {
-            rb.linearVelocity = transform.right * bSpeed;
-        }
+      
     }
 
 

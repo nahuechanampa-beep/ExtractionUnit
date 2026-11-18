@@ -6,7 +6,6 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 {
     [SerializeField] protected float maxHealth = 100f;
     [SerializeField] private float attackDamage = 10f;
-    [SerializeField] private float attackCooldown = 1f;
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private AudioSource audioSource;

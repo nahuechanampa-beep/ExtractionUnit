@@ -7,13 +7,13 @@ public class FinishZone : MonoBehaviour, IInteractable
     [SerializeField] private GameObject victoryPanel;
     private bool playerInZone = false;
 
-    private void Update()
-    {
-        if (playerInZone && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            Interact();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (playerInZone && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+    //    {
+    //        Interact();
+    //    }
+    //}
 
 
 

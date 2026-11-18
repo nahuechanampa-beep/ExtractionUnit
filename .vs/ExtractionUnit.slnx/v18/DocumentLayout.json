@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "E:\\Unity proyects\\ExtractionUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\cambiodearma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cambiodearma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\rifle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rifle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\tdsplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tdsplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\playerinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\normalzombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\normalzombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\victorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\victorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,6 +53,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity proyects\\extractionunit\\assets\\scripts\\normalzombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\normalzombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,43 +78,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CambioDeArma.cs",
-              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\CambioDeArma.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CambioDeArma.cs",
-              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\CambioDeArma.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CambioDeArma.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDQAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PlayerInventory.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInventory.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerInventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T02:26:43.228Z",
+              "WhenOpened": "2026-11-18T02:08:58.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "Rifle.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Rifle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rifle.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Rifle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rifle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T00:48:52.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shotgun.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Shotgun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Shotgun.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Shotgun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Shotgun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:56:19.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerInteractions.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerInteractions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInteractions.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerInteractions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerInteractions.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T07:38:50.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IInteractable.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T05:35:52.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDamageable.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IDamageable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IDamageable.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IDamageable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IDamageable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T06:32:44.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Bullet.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wA4AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-16T02:12:45.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "WeaponBase.cs",
+              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\WeaponBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponBase.cs",
+              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\WeaponBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponBase.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T02:40:49.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TDSPlayerController.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\TDSPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TDSPlayerController.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\TDSPlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\TDSPlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T21:20:13.547Z",
               "EditorCaption": ""
@@ -115,26 +204,26 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T18:38:44.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA4wDEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T06:30:12.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "NormalZombie.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\NormalZombie.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NormalZombie.cs",
@@ -142,18 +231,17 @@
               "RelativeToolTip": "Assets\\Scripts\\NormalZombie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T06:12:12.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-15T06:12:12.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "EnemyBase.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\EnemyBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyBase.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\EnemyBase.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyBase.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T06:04:33.163Z",
               "EditorCaption": ""
@@ -161,45 +249,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "VictoryMenu.cs",
-              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\VictoryMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VictoryMenu.cs",
-              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\VictoryMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VictoryMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T05:54:58.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "FinishZone.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\FinishZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FinishZone.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\FinishZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\FinishZone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T05:36:49.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IInteractable.cs",
-              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IInteractable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\IInteractable.cs",
-              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IInteractable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\IInteractable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T05:35:52.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -207,47 +269,32 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T05:00:13.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-15T05:00:13.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Pistol.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Pistol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pistol.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\Pistol.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pistol.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T03:10:01.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WeaponBase.cs",
-              "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\WeaponBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponBase.cs",
-              "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\WeaponBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WeaponBase.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T02:40:49.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "IWeapon.cs",
               "DocumentMoniker": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IWeapon.cs",
               "ToolTip": "E:\\Unity proyects\\ExtractionUnit\\Assets\\Scripts\\IWeapon.cs",
               "RelativeToolTip": "Assets\\Scripts\\IWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T02:37:26.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-15T02:37:26.386Z"
             }
           ]
         }
