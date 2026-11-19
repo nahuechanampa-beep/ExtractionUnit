@@ -1,9 +1,10 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class Shotgun : WeaponBase
 {
-   
     
+
     [SerializeField] private float anguloDispersion = 10f; 
 
     public override void Shoot()
@@ -17,7 +18,7 @@ public class Shotgun : WeaponBase
             InstancePellet(exactAngle); 
             InstancePellet(exactAngle + anguloDispersion / 2f);
 
-            ReproducirSonidoDisparo();
+            DispararEfectos();
             nextShootTime = Time.time + fireRate;
         }
     }

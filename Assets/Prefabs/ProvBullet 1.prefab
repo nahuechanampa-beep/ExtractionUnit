@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.3282, y: 3.567, z: 0.2387}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481709963482165538}
@@ -74,9 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2805d081596dfaf4783c99b0580a18bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  velocidad: 20
+  bSpeed: 20
   lifeTime: 2
   dmg: 10
+  impactParticlesPrefab: {fileID: 8138959191171234973, guid: 0e9fb80af4540b849b7cd568ad512727, type: 3}
 --- !u!58 &8967667486377839391
 CircleCollider2D:
   m_ObjectHideFlags: 0
