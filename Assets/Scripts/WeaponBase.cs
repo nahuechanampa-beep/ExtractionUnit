@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using Unity.Cinemachine;
 public abstract class WeaponBase : MonoBehaviour, IWeapon
 {
     [Header("Bullet Prefab")]
@@ -23,8 +23,10 @@ public abstract class WeaponBase : MonoBehaviour, IWeapon
     [SerializeField] private float pitchMin = 0.92f;
     [SerializeField] private float pitchMax = 1.08f;
 
+    [Header("Camera Shake")]
+    [SerializeField] protected Unity.Cinemachine.CinemachineImpulseSource impulseSource;
+    [SerializeField] protected float shakeForce = 0.5f;
 
-  
     public GameObject WeaponGameObject => this.gameObject;
     public float FireRate => this.fireRate;
     public virtual bool IsAutomatic => this.isAutomatic;
@@ -47,11 +49,21 @@ public abstract class WeaponBase : MonoBehaviour, IWeapon
                 bullet.Setup(damage, bulletSpeed);
             }
 
-            ReproducirSonidoDisparo();
+            DispararEfectos();
             nextShootTime = Time.time;
         }
  
     }
+
+    protected void DispararEfectos()
+    {
+        ReproducirSonidoDisparo();
+        if (impulseSource != null)
+        {
+            impulseSource.GenerateImpulse(shakeForce);
+        }
+    }
+
 
     protected virtual void ReproducirSonidoDisparo()
     {

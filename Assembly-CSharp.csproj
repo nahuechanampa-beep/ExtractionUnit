@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\VictoryMenu.cs" />
     <Compile Include="Assets\Scripts\TDSPlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Zombie_Fast.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
   </ItemGroup>
   <ItemGroup>

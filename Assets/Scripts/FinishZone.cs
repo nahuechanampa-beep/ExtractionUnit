@@ -5,8 +5,10 @@ using UnityEngine.InputSystem;
 public class FinishZone : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject victoryPanel;
+    [SerializeField] private GameObject eToInteract;
+    [SerializeField] private GameObject uiHUD;
     [SerializeField] private GameObject[] goldenStars; // Arrastrá StarFill_1, StarFill_2 y StarFill_3 acá
-    //private bool playerInZone = false;
+    
 
 
     public void Interact()
@@ -19,7 +21,8 @@ public class FinishZone : MonoBehaviour, IInteractable
     public void ShowVictoryPanel()
     {
         victoryPanel.SetActive(true);
-
+        eToInteract.SetActive(false);
+        uiHUD.SetActive(false);
         int rescued = RescueManager.Instance != null ? RescueManager.Instance.RescuedCivilians : 0;
 
         for (int i = 0; i < goldenStars.Length; i++)
@@ -29,20 +32,6 @@ public class FinishZone : MonoBehaviour, IInteractable
         }
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        playerInZone = true;
-    //    }
-    //}
-
-    //private void OnTriggerExit2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        playerInZone = false;
-    //    }
-    //}
+    
 
 }

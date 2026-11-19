@@ -8,22 +8,25 @@ public class TDSPlayerController : MonoBehaviour
 
     [SerializeField] private Transform pfBulletProjectile;
     [SerializeField] private Transform spawnBulletPosition;
-
-    //private IWeapon currentWeapon;
+    [SerializeField] private GameObject interactPromptUI;
+    
     private IInteractable currentInteractable;
     private SpriteRenderer playerSpriteRenderer;
     private PlayerInventory playerInventory;
 
     private void Awake()
     {
-        //currentWeapon = GetComponentInChildren<IWeapon>();
+        
         playerInventory = GetComponent<PlayerInventory>();
     }
 
     private void Start()
     {
+        if (interactPromptUI != null)
+        {
+            interactPromptUI.SetActive(false);
+        }
 
-        
     }
 
 
@@ -84,6 +87,7 @@ public class TDSPlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
             currentInteractable.Interact();
+
         }
     }
 
@@ -93,6 +97,10 @@ public class TDSPlayerController : MonoBehaviour
         if (collision.TryGetComponent<IInteractable>(out IInteractable interactable))
         {
             currentInteractable = interactable;
+            if (interactPromptUI != null)
+            {
+                interactPromptUI.SetActive(true);
+            }
         }
     }
 
@@ -101,6 +109,10 @@ public class TDSPlayerController : MonoBehaviour
         if (collision.TryGetComponent<IInteractable>(out IInteractable interactable) && interactable == currentInteractable)
         {
             currentInteractable = null;
+            if (interactPromptUI != null)
+            {
+                interactPromptUI.SetActive(false);
+            }
         }
     }
 

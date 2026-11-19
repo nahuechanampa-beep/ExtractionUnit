@@ -56,14 +56,14 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 
         if (agent.velocity.sqrMagnitude > 0.01f) // Solo rotar si realmente se está moviendo
         {
-            Vector2 direccionMovimiento = agent.velocity.normalized;
+            Vector2 movDir = agent.velocity.normalized;
 
             // Calcula el ángulo (usa - 90f si tu sprite mira hacia arriba por defecto, 
             // o quita el - 90f si tu sprite mira hacia la derecha por defecto)
-            float angulo = Mathf.Atan2(direccionMovimiento.y, direccionMovimiento.x) * Mathf.Rad2Deg - 90f;
+            float angle = Mathf.Atan2(movDir.y, movDir.x) * Mathf.Rad2Deg - 90f;
 
             // Aplica rotación únicamente en Z, dejando X e Y clavados en 0
-            transform.rotation = Quaternion.Euler(0f, 0f, angulo);
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
     }
