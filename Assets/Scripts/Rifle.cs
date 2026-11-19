@@ -9,11 +9,5 @@ public class Rifle : WeaponBase
         isAutomatic = true;
     }
 
-   //private void Update()
-   // {
-   //     if (Input.GetMouseButton(0))
-   //     {
-   //         Shoot();
-   //     }
-   // }
+   
 }

@@ -67,7 +67,7 @@ public abstract class WeaponBase : MonoBehaviour, IWeapon
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-        Vector2 mouseDir = (mousePos - transform.position).normalized;
+        Vector2 mouseDir = (mousePos - spawnBulletPosition.position).normalized;
         float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
         return angle;
     }

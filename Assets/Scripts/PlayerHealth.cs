@@ -29,10 +29,10 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        if (playerCurrentHealth <= 0)
-        {
-            Die();
-        }
+        //if (playerCurrentHealth <= 0)
+        //{
+        //    Die();
+        //}
 
        
     }
@@ -40,6 +40,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public virtual void TakeDamage(float damage)
     {
+        if (playerCurrentHealth <= 0) return; // Evita recibir daño estando ya muerto
+
         playerCurrentHealth = Mathf.Clamp(playerCurrentHealth - damage, 0, playerMaxHealth);
         OnHealthChanged?.Invoke(playerCurrentHealth, playerMaxHealth);
 

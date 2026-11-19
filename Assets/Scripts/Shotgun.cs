@@ -4,7 +4,7 @@ public class Shotgun : WeaponBase
 {
    
     
-    [SerializeField] private float anguloDispersion = 10f; // Ángulo total del cono de disparo
+    [SerializeField] private float anguloDispersion = 10f; 
 
     public override void Shoot()
     {
@@ -13,24 +13,14 @@ public class Shotgun : WeaponBase
 
             float exactAngle = GetMouseAngle();
            
-            InstancePellet(exactAngle - anguloDispersion / 2f); // Disparo a la izquierda
-            InstancePellet(exactAngle); // Disparo al centro
-            InstancePellet(exactAngle + anguloDispersion / 2f); // Disparo a la derecha
-
-
-
-            //Transform bulletTransform = Instantiate(pfBulletProjectile, spawnBulletPosition.position, pfBulletProjectile.rotation);
-            //if (bulletTransform.TryGetComponent<Bullet>(out Bullet bullet))
-            //{
-            //        bullet.Setup(damage, bulletSpeed);
-            //}
-
+            InstancePellet(exactAngle - anguloDispersion / 2f); 
+            InstancePellet(exactAngle); 
+            InstancePellet(exactAngle + anguloDispersion / 2f);
 
             ReproducirSonidoDisparo();
             nextShootTime = Time.time + fireRate;
         }
     }
-
 
     private void InstancePellet(float angle)
     {

@@ -9,15 +9,15 @@ public class TDSPlayerController : MonoBehaviour
     [SerializeField] private Transform pfBulletProjectile;
     [SerializeField] private Transform spawnBulletPosition;
 
-    private IWeapon currentWeapon;
+    //private IWeapon currentWeapon;
     private IInteractable currentInteractable;
     private SpriteRenderer playerSpriteRenderer;
-
+    private PlayerInventory playerInventory;
 
     private void Awake()
     {
-        currentWeapon = GetComponentInChildren<IWeapon>();
-
+        //currentWeapon = GetComponentInChildren<IWeapon>();
+        playerInventory = GetComponent<PlayerInventory>();
     }
 
     private void Start()
@@ -29,7 +29,19 @@ public class TDSPlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (currentWeapon == null) return;
+        WeaponChange();
+        HandleShooting();
+        HandleInteractions();
+    }
+
+    
+
+
+    private void HandleShooting()
+    {
+        if (playerInventory == null || playerInventory.CurrentWeapon == null) return;
+
+        IWeapon currentWeapon = playerInventory.CurrentWeapon;
 
         if (currentWeapon.IsAutomatic)
         {
@@ -45,14 +57,36 @@ public class TDSPlayerController : MonoBehaviour
                 currentWeapon.Shoot();
             }
         }
+    }
+
+    private void WeaponChange()
+    {
+        if (playerInventory == null) return;
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            playerInventory.EquipWeaponByIndex(0);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            playerInventory.EquipWeaponByIndex(1);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            playerInventory.EquipWeaponByIndex(2);
+        }
+    }
 
 
 
+    private void HandleInteractions()
+    {
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
             currentInteractable.Interact();
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -69,6 +103,7 @@ public class TDSPlayerController : MonoBehaviour
             currentInteractable = null;
         }
     }
+
 
 }
 
